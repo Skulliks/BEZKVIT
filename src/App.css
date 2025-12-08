@@ -1,0 +1,11 @@
+.MuiDrawer-anchorRight * {
+    padding: 10px;
+}
+
+.btnTwint input {
+    width: 35vh;
+    height: 9vh;
+    background: url("./assets/button_light_fr.svg") no-repeat center center;
+    background-size: cover;
+    cursor: pointer;
+}
