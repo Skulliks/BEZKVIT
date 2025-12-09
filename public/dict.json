@@ -65,52 +65,114 @@
     ],
     "persons": [
       {
+        "name": "Голуб Олександр",
+        "role": "Режиссер",
+        "imgName": "holub_oleksander.jpg"
+      },
+      {
         "name": "Шевцов Денис",
-        "role": "Тех. Админ"
+        "role": "Тех. Админ",
+        "imgName": "shevtsov_denis.jpg"
       },
       {
-        "name": "Олександр Голуб",
-        "role": "Режиссер"
+        "name": "Голуб Владислав",
+        "role": "Актор",
+        "imgName": "holub_vladislav.jpg"
       },
       {
-        "name": "Олександр Голуб",
-        "role": "Режиссер"
+        "name": "Шевцова Тетяна",
+        "role": "Актор",
+        "imgName": "shevtsova_tetiana.jpg"
       },
       {
-        "name": "Олександр Голуб",
-        "role": "Режиссер"
+        "name": "Шевцова Карина",
+        "role": "Актор",
+        "imgName": "shevtsova_karina.jpg"
       },
       {
-        "name": "Олександр Голуб",
-        "role": "Режиссер"
+        "name": "Волкова Світлана",
+        "role": "Актор",
+        "imgName": "volkova_svetlana.jpg"
       },
       {
-        "name": "Олександр Голуб",
-        "role": "Режиссер"
+        "name": "Гудовa Валерія",
+        "role": "Актор",
+        "imgName": "gudova_valeria.jpg"
       },
       {
-        "name": "Олександр Голуб",
-        "role": "Режиссер"
+        "name": "Капцелович Ганна",
+        "role": "Актор",
+        "imgName": "kaptselovich_anna.jpg"
       },
       {
-        "name": "Олександр Голуб",
-        "role": "Режиссер"
+        "name": "Катрич Роман",
+        "role": "Актор",
+        "imgName": "katrich_roman.jpg"
       },
       {
-        "name": "Олександр Голуб",
-        "role": "Режиссер"
+        "name": "Колодій Євген",
+        "role": "Актор",
+        "imgName": "kolodiy_evgen.jpg"
       },
       {
-        "name": "Олександр Голуб",
-        "role": "Режиссер"
+        "name": "Колодій Олена",
+        "role": "Актор",
+        "imgName": "kolodiy_lena.jpg"
       },
       {
-        "name": "Олександр Голуб",
-        "role": "Режиссер"
+        "name": "Костін Олег",
+        "role": "Актор",
+        "imgName": "kostin_oleg.jpg"
       },
       {
-        "name": "Владислав Голуб",
-        "role": "Актор"
+        "name": "Костіна Анастасія",
+        "role": "Актор",
+        "imgName": "kostina_anastasia.jpg"
+      },
+      {
+        "name": "Лотоцька Марям",
+        "role": "Актор",
+        "imgName": "lototska_mariam.jpg"
+      },
+      {
+        "name": "Мачко Тетяна",
+        "role": "Актор",
+        "imgName": "machko_tetiana.jpg"
+      },
+      {
+        "name": "Тимченко Олена",
+        "role": "Актор",
+        "imgName": "tymchenko_lena.jpg"
+      },
+      {
+        "name": "Ткаченко Вікторія",
+        "role": "Актор",
+        "imgName": "tkachenko_viktoria.jpg"
+      },
+      {
+        "name": "Ткаченко Юлія",
+        "role": "Актор",
+        "imgName": "tkachenko_yulia.jpg"
+      },
+      {
+        "name": "Тимошенко Андрій",
+        "role": "Актор",
+        "imgName": "timoshenko_andriy.jpg"
+      },
+      {
+        "name": "Романенко Артур",
+        "role": "Актор",
+        "imgName": "romanenko_artur.jpg"
+      },
+      {
+        "name": "Радионова Оксана",
+        "role": "Актор",
+        "imgName": "radionova_oksana.jpg"
+      },
+      {
+        "name": "Леоненко Ірина",
+        "role": "Актор",
+        "imgName": "leonenko_iryna.jpg"
       }
     ],
 
@@ -218,6 +280,199 @@
           "Всі актори були одягнені в українські народні костюми.",
           "Кожному присутньому бум подарований невеликий соняшник,  символ української єдності. ",
           "Наприкінці всі охочі мали можливість з фотографуватись з учасниками виступу біля створеної нами фото-зони. "
+        ],
+        "srcVideo": ""
+      }
+    ]
+  },
+  "fr": {
+    "main_title": "ACCUEIL",
+    "exposition_title": "SPECTACLES",
+    "diary_title": "JOURNAL",
+    "support_title": "SOUTENIR",
+    "about_title": "À PROPOS",
+    "events": [
+      {
+        "month": "DÉCEMBRE",
+        "day": 21,
+        "title": "Les mousquetaires en vacances"
+      }
+    ],
+    "citate_text": "« Que chacun donne comme il l’a décidé dans son cœur, sans tristesse ni contrainte ; car Dieu aime celui qui donne avec joie. »",
+    "citate_author": "2 Corinthiens 9:7",
+    "description_support_paragraphe_list": [
+      "En soutenant notre théâtre, vous contribuez à la qualité de nos prochaines représentations : nouveaux costumes, nouveau matériel et accessoires.",
+      "Tous les comptes et dépenses sont transparents."
+    ],
+    "about_title_content": "Notre équipe",
+    "about_sections": [
+      {
+        "title": "Histoire de la création du théâtre social BEZKVIT",
+        "description_list": [
+          "Tout a commencé par une question :",
+          "qu’est-ce qui peut unir un groupe de personnes contraintes de quitter leur pays en raison de la guerre et du danger de mort ?",
+          "Sûrement une même douleur, une même tragédie, un même chagrin partagé. Car la vie de chaque personne est une histoire de sentiments, d’épreuves et de luttes.",
+          "Mais comment aider une personne à traverser des moments difficiles tout en gardant foi en la bonté, la justice et l’amour ? Quand on perd confiance en l’être humain, on cherche un soutien en Dieu et dans sa famille, là où l’on est vraiment aimé et apprécié.",
+          "Et aussi — dans les traditions : fêtes familiales, anniversaires, fête des mères et des pères, célébration du Nouvel An ou de Noël.",
+          "C’est ainsi qu’est née l’idée de rassembler la diaspora ukrainienne de la ville de La Chaux-de-Fonds (Suisse) et, en décembre 2023, de présenter un spectacle musical et interactif pour enfants et parents : « L’aventure du Grand-père Google et de sa petite-fille Instagram ». ",
+          "Environ 100 spectateurs — enfants et adultes — étaient présents. C’était intéressant pour tous, car les acteurs étaient des personnes ordinaires unies par un objectif commun. Les costumes, les décors et les accessoires étaient fabriqués à la main.",
+          "À chaque nouveau spectacle, notre théâtre gagnait en couleurs : des acteurs, musiciens, chanteurs, costumiers et décorateurs nous rejoignaient."
+        ]
+      },
+      {
+        "title": "La naissance du théâtre",
+        "description_list": [
+          "Le 24 mars 2025, lors d’une réunion du collectif artistique, la décision a été prise de créer l’association Théâtre social « BEZKVIT »."
+        ]
+      },
+      {
+        "title": "Pourquoi « BEZKVIT » ?",
+        "description_list": [
+          "C’est un jeu de mots.",
+          "• En ukrainien, cela signifie « sans fleurs » — symbole de notre désir désintéressé d’offrir de la joie, des émotions et la chaleur de nos cœurs.",
+          "• En français, cela évoque le mot « biscuit » — un gâteau composé de nombreux ingrédients (genres artistiques). Et la « cerise » sur ce gâteau, ce sont les talents de nos interprètes."
+        ]
+      },
+      {
+        "title": "Nos valeurs",
+        "description_list": [
+          "• Ouverture — nous croyons que chacun a le droit de monter sur scène et d’être entendu.",
+          "• Courage — nous abordons des sujets difficiles, mais importants.",
+          "• Collaboration — nous réunissons acteurs, spectateurs et partenaires autour d’une cause commune.",
+          "• Humanité — au cœur de chaque spectacle se trouvent l’attention portée à la personne et à son histoire."
+        ]
+      },
+      {
+        "title": "Notre mission",
+        "description_list": [
+          "Le Théâtre social BEZKVIT est né du rêve que la scène puisse devenir un foyer pour tous. Ici jouent enfants et adultes, personnes aux parcours et possibilités différentes — pour partager l’essentiel, parler du vrai et offrir de l’espoir."
+        ]
+      }
+    ],
+    "persons": [
+      { "name": "Oleksandr Holoub", "role": "Metteur en scène" },
+      { "name": "Denys Shevtsov", "role": "Admin. technique" },
+      { "name": "Vladyslav Holoub", "role": "Acteur" },
+      { "name": "Tetiana Shevtsova", "role": "Actrice" },
+      { "name": "Karina Shevtsova", "role": "Actrice" },
+      { "name": "Svitlana Volkova", "role": "Actrice" },
+      { "name": "Valeriia Hudovo", "role": "Actrice" },
+      { "name": "Hanna Kaptselovytch", "role": "Actrice" },
+      { "name": "Roman Katrych", "role": "Acteur" },
+      { "name": "Yevhen Kolodii", "role": "Acteur" },
+      { "name": "Olena Kolodiï", "role": "Actrice" },
+      { "name": "Oleh Kostin", "role": "Acteur" },
+      { "name": "Anastasiia Kostina", "role": "Actrice" },
+      { "name": "Mariiam Lototska", "role": "Actrice" },
+      { "name": "Tetiana Machko", "role": "Actrice" },
+      { "name": "Olena Tymtchenko", "role": "Actrice" },
+      { "name": "Viktoriia Tkatchenko", "role": "Actrice" },
+      { "name": "Yuliia Tkatchenko", "role": "Actrice" },
+      { "name": "Andrii Tymoshenko", "role": "Acteur" },
+      { "name": "Artur Romamenko", "role": "Acteur" }
+    ],
+    "expositions": [
+      {
+        "id": 1,
+        "title": "« Les aventures du Grand-père Google et de la Petite-fille Instagram »",
+        "date": "30.12.2023",
+        "genre": "Genre : programme théâtral divertissant",
+        "place": "Suisse, 32000 La Chaux-de-Fonds, rue Allemande 24A (salle de concert de l’église catholique)",
+        "text": "Une histoire féerique mêlant les aventures du Père Noël et de sa petite-fille dans l’univers d’Internet. La mise en scène combine le conte traditionnel avec des images modernes, compréhensibles pour les enfants comme pour les adultes.",
+        "list": [
+          "Environ 100 personnes étaient présentes.",
+          "Tous les enfants sont venus en costumes de fête.",
+          "Chaque enfant a reçu un cadeau et beaucoup d’émotions positives.",
+          "L’ambiance était chaleureuse et familiale. Chaque famille avait apporté un plat à partager.",
+          "Une séance photo près du décor festif a clôturé l’événement."
+        ],
+        "srcVideo": ""
+      },
+      {
+        "id": 2,
+        "title": "« Nouvelles aventures de Cendrillon au royaume DISCO »",
+        "date": "10.03.2024",
+        "genre": "Genre : comédie musicale",
+        "place": "Suisse, 32000 La Chaux-de-Fonds, rue Allemande 24A",
+        "text": "Une interprétation musicale moderne du conte de Charles Perrault. Cendrillon se retrouve dans le royaume DISCO où l’attendent musique, humour et danses.",
+        "list": [
+          "L’événement était dédié à la Journée internationale des droits des femmes.",
+          "Environ 120 spectateurs étaient présents.",
+          "Chaque femme a reçu une rose et un message de félicitations.",
+          "Adultes et enfants ont joué ensemble, créant un duo artistique apprécié du public.",
+          "La musique moderne, l’humour et les créations originales ont suscité des réactions enthousiastes.",
+          "La chanson finale a été chantée avec les spectateurs debout."
+        ],
+        "srcVideo": ""
+      },
+      {
+        "id": 3,
+        "title": "« Aventures de Noël des mousquetaires ou saga d’émigrants »",
+        "date": "22.12.2024",
+        "genre": "Genre : comédie musicale",
+        "place": "Suisse, 32000 La Chaux-de-Fonds, rue Allemande 24A",
+        "text": "Une version musicale moderne inspirée du roman « Les Trois Mousquetaires ». Ici, les mousquetaires sont imaginés comme des émigrants de différentes nationalités.",
+        "list": [
+          "Environ 140 personnes étaient présentes.",
+          "Le programme comprenait un concert du trio « MERE DE LUMIERE », un atelier pour enfants, et une histoire de Noël racontée par le pasteur Didier.",
+          "L’événement central était la comédie musicale.",
+          "Le concept original a été chaleureusement accueilli.",
+          "Des spectateurs de différentes nationalités ont trouvé un message personnel dans la pièce.",
+          "Bien que la représentation fût en ukrainien, une explication en français a aidé le public.",
+          "Une séance photo a eu lieu après la représentation."
+        ],
+        "srcVideo": "https://www.youtube.com/embed/2AqxS2gNWgU?si=Sh8ZbOyZJB2BF2Tr"
+      },
+      {
+        "id": 4,
+        "title": "« À la poursuite de deux lièvres »",
+        "date": "23.05.2025",
+        "genre": "Genre : comédie musicale",
+        "place": "Suisse, 32000 La Chaux-de-Fonds, rue Allemande 24A",
+        "text": "Une comédie musicale moderne basée sur la pièce ukrainienne classique « À la poursuite de deux lièvres ». Elle mélange humour ukrainien et humour juif-odessite.",
+        "list": [
+          "Plus de 200 spectateurs étaient présents.",
+          "La combinaison des styles humoristiques a offert de nombreuses émotions.",
+          "L’histoire de Holokhvastov et Pronia Prokopivna a intéressé aussi les Suisses.",
+          "Grâce au programme traduit et à l’introduction en français, le théâtre a gagné de nouveaux amis.",
+          "Le public a applaudi debout.",
+          "Les enfants participaient simultanément à un atelier créatif.",
+          "Une séance photo traditionnelle a eu lieu après la pièce."
+        ],
+        "srcVideo": "https://www.youtube.com/embed/8k5kJ6a0oAM?si=oHGsPug89DzZmSNl"
+      },
+      {
+        "id": 5,
+        "title": "« À la recherche de l’or biblique »",
+        "date": "23.05.2025",
+        "genre": "Genre : quête théâtralisée",
+        "place": "Suisse, 32000 La Chaux-de-Fonds, rue Allemande 24A et cour extérieure",
+        "text": "Une quête théâtralisée basée sur des histoires bibliques relatant la vie et le ministère de Jésus-Christ. Les participants plongent dans les récits grâce aux acteurs, musiciens et chanteurs.",
+        "list": [
+          "L’événement était dédié à Pâques.",
+          "L’objectif était de transmettre le message du Christ de manière ludique.",
+          "L’histoire commençait par l’arrivée de pirates aidant enfants et adultes à accomplir diverses missions.",
+          "Grâce au jeu immersif des artistes, les participants se sentaient transportés dans le passé biblique.",
+          "Les missions :",
+          "   Pour les enfants — simples, interactives et éducatives.",
+          "   Pour les adultes — plus profondes et complexes.",
+          "Tous les participants ont fini la quête ensemble.",
+          "Chaque enfant a reçu un cadeau offert par les sponsors et amis de l’église Centre de Vie."
+        ],
+        "srcVideo": ""
+      },
+      {
+        "id": 6,
+        "title": "Almanach musical « Sur les vagues de l’inspiration »",
+        "date": "23.08.2025",
+        "genre": "Genre : programme musical et théâtral",
+        "place": "Suisse, 23000 La Chaux-de-Fonds, place Six Pompe (en plein air)",
+        "text": "Des œuvres musicales utilisées dans nos spectacles et très appréciées du public, ainsi que de nouvelles compositions écrites par notre directeur Oleksandr Holoub. L’une d’elles est basée sur un poème de la talentueuse poétesse ukrainienne Inessa Ohneva, originaire de Boutcha, devenu tragiquement prophétique : « Et sachez que nous pousserons encore ».",
+        "list": [
+          "Environ 200 personnes étaient présentes.",
+          "Les acteurs étaient habillés en costumes traditionnels ukrainiens.",
+          "Chaque spectateur a reçu un petit tournesol, symbole de l’unité ukrainienne.",
+          "Une séance photo a eu lieu à la fin de l’événement."
         ],
         "srcVideo": ""
       }

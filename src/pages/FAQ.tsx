@@ -4,6 +4,7 @@ import { useTitleContext } from "../context/TitleContext";
 import { Box } from "@mui/material";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+
 interface AboutSectionProps {
   title: string;
   description_list: [string];
@@ -12,11 +13,13 @@ interface AboutSectionProps {
 interface PersonProps {
   name: string;
   role: string;
+  imgName: string;
 }
 
 export const FAQ = () => {
   const { setTitle } = useTitleContext();
   const { dict } = useDictContext();
+  const imgPath = `${import.meta.env.BASE_URL}members`;
 
   const responsive = {
     desktop: {
@@ -47,8 +50,10 @@ export const FAQ = () => {
       {dict.about_title_content}
       <Carousel responsive={responsive}>
         {dict.persons.map((person: PersonProps) => {
+          const imgName = `${person.imgName}`;
           return (
             <Box key={person.name}>
+              <img src={`${imgPath}/${imgName}`} alt={imgName} />
               {person.name}
               {person.role}
             </Box>
