@@ -11,6 +11,7 @@ export default defineConfig({
     host: "0.0.0.0", // Слушать все интерфейсы (не только localhost)
     port: 3000, // Порт (можно изменить)
     strictPort: false, // Если порт занят, использовать следующий
+    allowedHosts: ["bezkvit.ch"],
   },
   server: {
     host: "0.0.0.0", // Также для dev сервера
