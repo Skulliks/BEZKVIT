@@ -13,7 +13,7 @@ export default defineConfig({
     strictPort: false, // Если порт занят, использовать следующий
   },
   server: {
-    host: "127.0.0.1", // Также для dev сервера
+    host: "0.0.0.0", // Также для dev сервера
     port: 5173,
   },
 });
