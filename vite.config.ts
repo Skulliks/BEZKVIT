@@ -8,7 +8,7 @@ export default defineConfig({
     chunkSizeWarningLimit: 1600,
   },
   preview: {
-    host: "bezkvit.ch", // Слушать все интерфейсы (не только localhost)
+    host: "0.0.0.0", // Слушать все интерфейсы (не только localhost)
     port: 3000, // Порт (можно изменить)
     strictPort: false, // Если порт занят, использовать следующий
   },
