@@ -46,7 +46,7 @@ export const FAQ = () => {
   if (!dict) return;
 
   return (
-    <Box>
+    <>
       {dict.about_title_content}
       <Carousel responsive={responsive}>
         {dict.persons.map((person: PersonProps) => {
@@ -78,7 +78,7 @@ export const FAQ = () => {
           );
         })}
       </Box>
-    </Box>
+    </>
   );
 };
 
