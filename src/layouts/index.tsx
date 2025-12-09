@@ -12,7 +12,12 @@ export default function Layout() {
         <Toolbar />
       </Box>
       {isVisible ? (
-        <Typography className="pageTitle">{title}</Typography>
+        <Typography
+          className="pageTitle"
+          sx={{ fontFamily: "uni_heavy", fontSize: "4rem" }}
+        >
+          {title}
+        </Typography>
       ) : null}
       <Outlet />
     </>

@@ -19,20 +19,38 @@ export const Sidebar = ({ open, toggleDrawer }: SidebarProps) => {
         onClose={toggleDrawer}
         anchor="right"
         id="sidebar"
-        PaperProps={{
-          sx: {},
+        slotProps={{
+          paper: {
+            id: "sidebar",
+          },
         }}
       >
-        <Link to={{ pathname: "expositions" }} onClick={toggleDrawer}>
+        <Link
+          className="sidebar-options"
+          to={{ pathname: "expositions" }}
+          onClick={toggleDrawer}
+        >
           {dict.main_title}
         </Link>
-        <Link to={{ pathname: "support" }} onClick={toggleDrawer}>
+        <Link
+          className="sidebar-options"
+          to={{ pathname: "support" }}
+          onClick={toggleDrawer}
+        >
           {dict.support_title}
         </Link>
-        <Link to={{ pathname: "faq" }} onClick={toggleDrawer}>
+        <Link
+          className="sidebar-options"
+          to={{ pathname: "faq" }}
+          onClick={toggleDrawer}
+        >
           {dict.about_title}
         </Link>
-        <Link to={{ pathname: "diary" }} onClick={toggleDrawer}>
+        <Link
+          className="sidebar-options"
+          to={{ pathname: "diary" }}
+          onClick={toggleDrawer}
+        >
           {dict.diary_title}
         </Link>
       </Drawer>

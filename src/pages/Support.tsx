@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useTitleContext } from "../context/TitleContext";
 import { useDictContext } from "../context/DictContext";
-import { Box, Typography } from "@mui/material";
+import { Box } from "@mui/material";
 
 export const Support = () => {
   const { setTitle } = useTitleContext();
@@ -14,10 +14,12 @@ export const Support = () => {
   if (!dict) return;
 
   return (
-    <Box className="content">
-      <Typography>{dict.citate_text}</Typography>
-      <Typography>{dict.citate_author}</Typography>
+    <Box id="contentSuppport">
       <figure className="btnTwint">
+        <figcaption>
+          <span id="citate_text">{dict.citate_text}</span>
+          <span id="citate_author">{dict.citate_author}</span>
+        </figcaption>
         <input
           type="button"
           onClick={() =>
@@ -28,7 +30,7 @@ export const Support = () => {
           }
         ></input>
       </figure>
-      <Box>
+      <Box className="support-description">
         {dict.description_support_paragraphe_list.map((item: string) => {
           return <Box key={item}>{item}</Box>;
         })}

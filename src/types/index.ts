@@ -2,6 +2,7 @@ export const LANG_STORAGE_KEY = "bezkvit-lang";
 
 export interface ExpositionProps {
   id: number;
+  previewName: string;
   title: string;
   date: string;
   genre: string;

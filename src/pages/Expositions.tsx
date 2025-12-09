@@ -16,7 +16,7 @@ export const Expositions = () => {
   if (!dict) return;
 
   return (
-    <Box className="content">
+    <Box id="contentExpositions">
       {dict.expositions.map((exposition: ExpositionProps) => {
         return (
           <Link
@@ -26,8 +26,18 @@ export const Expositions = () => {
               display: "block",
             }}
           >
-            {exposition.date}
-            {exposition.title}
+            <figure>
+              <img
+                src={`${import.meta.env.BASE_URL}exp_previews/${
+                  exposition.previewName
+                }`}
+                alt=""
+              />
+              <figcaption>
+                <strong className="strong">{exposition.date}</strong>
+                {exposition.title}
+              </figcaption>
+            </figure>
           </Link>
         );
       })}

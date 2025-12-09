@@ -1,89 +1,264 @@
 @font-face {
-    font-family: 'BRANCH';
-    src: url("./fonts/BRANCH.ttf");
+  font-family: "BRANCH";
+  src: url("./fonts/BRANCH.ttf");
 }
 @font-face {
-    font-family: 'futura';
-    src: url("./fonts/futura.otf");
+  font-family: "futura";
+  src: url("./fonts/futura.otf");
+}
+@font-face {
+  font-family: "uni_heavy";
+  src: url("./fonts/uni_heavy.otf");
+}
+@font-face {
+  font-family: "GOTHIC";
+  src: url("./fonts/GOTHIC.TTF");
+}
+@font-face {
+  font-family: "GOTHICB";
+  src: url("./fonts/GOTHICB.TTF");
+}
+@font-face {
+  font-family: "ANTQUAI";
+  src: url("./fonts/ANTQUAI.TTF");
 }
 
-$primary: #9F8768;
+$primary: #9f8768;
 $red: #960000;
 
 :root {
-    background-color: black;
-}
-
-#root {
-    display: grid;
+  background-color: black;
 }
 
 body {
-    margin: 0;
-    background: url("./assets/background.jpg") no-repeat;
-    background-size: cover;
-    height: 100dvh;
+  margin: 0;
+  background-color: black;
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.4) 0%,
+      rgba(0, 0, 0, 0.4) 80%,
+      rgba(0, 0, 0, 1) 100%
+    ),
+    url("./assets/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100dvh;
 }
 
 .MuiDrawer-anchorRight * {
-    padding: 10px;
-}
-
-.btnTwint input {
-    width: 35vh;
-    height: 9vh;
-    background: url("./assets/button_light_fr.svg") no-repeat center center;
-    background-size: cover;
-    cursor: pointer;
+  padding: 10px;
 }
 
 $toolbarFontSize: 3.5rem;
 
 #toolbar {
-    background: white;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  #toolbar-items {
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    #toolbar-items {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    
-        * {
-            margin: 0 20px;
-        }
-    
-        #toolbar-title {
-            text-decoration: none;
-            font-family: 'BRANCH';
-            font-size: $toolbarFontSize;
-            color: $primary;
-        }
-        
-        
-        #toolbar-btn-langs {
-            margin-left: auto;
-            font-size: $toolbarFontSize;
-            font-family: 'futura';
-            color: $primary;
-            * {
-                    font-family: 'futura';
-                    font-size: $toolbarFontSize;
-                    color: $primary;
-            }
-        }
+    flex-direction: row;
+    align-items: center;
+
+    * {
+      margin: 0 20px;
     }
+
+    #toolbar-title {
+      text-decoration: none;
+      font-family: "BRANCH";
+      font-size: $toolbarFontSize;
+      color: $primary;
+    }
+
+    #toolbar-btn-langs {
+      margin-left: auto;
+      font-size: $toolbarFontSize;
+      font-family: "futura";
+      color: $primary;
+      * {
+        font-family: "futura";
+        font-size: $toolbarFontSize;
+        color: $primary;
+      }
+    }
+  }
 }
 
 #toolbar::after {
-    content: "";
-    width: 100dvw;
-    position: relative;
-    top: 15px;
-    height: 5px;
-    background-color: white;
+  content: "";
+  width: 100dvw;
+  position: relative;
+  top: 15px;
+  height: 5px;
+  background-color: white;
+}
+
+#sidebar {
+  height: auto;
+  margin-top: 150px;
+  padding: 50px 50px 50px 150px;
+  .MuiPaper-root {
+    -webkit-mask-image: radial-gradient(
+        circle 50px at -10px 5px,
+        transparent 49px,
+        white 51px
+      ),
+      /* верхний вырез опущен на 15px */
+        radial-gradient(
+          circle 50px at -10px calc(100% - 5px),
+          transparent 49px,
+          white 51px
+        );
+    /* нижний вырез поднят на 15px */
+    -webkit-mask-composite: source-in;
+    mask-image: radial-gradient(
+        circle 50px at -10px 5px,
+        transparent 49px,
+        white 51px
+      ),
+      radial-gradient(
+        circle 50px at -10px calc(100% - 5px),
+        transparent 49px,
+        white 51px
+      );
+    mask-composite: intersect;
+  }
+  .sidebar-options {
+    color: $primary;
+    font-size: 5rem;
+    font-family: "uni_heavy";
+    text-decoration: none;
+    text-align: end;
+  }
 }
 
 .pageTitle {
-    background-color: $red;
+  background-color: $red;
+  position: fixed;
+  padding: 30px 90px;
+  color: white;
+  width: 500px;
+  text-align: center;
+  top: 300px;
+  z-index: 1000;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  cursor: default;
+}
+
+#contentExpositions {
+  margin-left: auto;
+  margin-top: 40px;
+  width: 50%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  * {
+    text-decoration: none;
+  }
+
+  figure {
+    padding: 10px;
+    padding-top: 10px;
+    width: auto;
+    height: 310px;
+    border-radius: 10px;
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+      width: 200px;
+      height: 250px;
+      object-fit: cover;
+      object-position: center;
+      border-radius: 10px;
+      border: 2px white solid;
+      max-width: 200px;
+      transition: 0.3s;
+    }
+
+    figcaption {
+      margin-top: 5px;
+      color: white;
+      display: flex;
+      transition: 0.3s;
+      align-self: flex-start;
+      font-family: "GOTHIC";
+      font-size: 0.8rem;
+      display: flex;
+      flex-direction: column;
+
+      .strong {
+        font-family: "GOTHICB";
+        display: inline;
+      }
+    }
+  }
+  figure:hover {
+    background-color: white;
+    box-shadow: 5px 5px 15px black;
+    figcaption {
+      color: black;
+    }
+    img {
+      box-shadow: 5px 5px 15px black;
+    }
+  }
+}
+
+#contentSuppport {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 80px 50px 0 auto;
+
+  #citate_text {
+    padding: 5px;
+  }
+  #citate_author {
+    align-self: end;
+  }
+
+  .btnTwint {
+    display: flex;
+    flex-direction: column;
+    figcaption {
+      display: flex;
+      flex-direction: column;
+      font-family: "ANTQUAI";
+      font-size: 2rem;
+      color: white;
+      * {
+        margin: 30px 0;
+      }
+    }
+
+    input {
+      background: url("./assets/button_light_fr.svg") no-repeat center center;
+      width: 60%;
+      height: 120px;
+      border-radius: 10px;
+      border: none;
+      align-self: center;
+      background-size: cover;
+      cursor: pointer;
+    }
+  }
+
+  .support-description {
+    background-color: white;
+    padding: 20px;
+    border-radius: 30px;
+    margin-top: 20px;
+
+    * {
+      font-family: "GOTHIC";
+      font-size: 1.5rem;
+      margin: 30px 0;
+    }
+  }
 }

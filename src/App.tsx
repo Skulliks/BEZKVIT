@@ -6,8 +6,9 @@ import { TitleProvider } from "./context/TitleContext.ts";
 import { useState } from "react";
 import { LANG_STORAGE_KEY } from "./types/index.ts";
 
+const queryClient = new QueryClient();
+
 export default function App() {
-  const queryClient = new QueryClient();
   const [lang, setLang] = useState(
     localStorage.getItem(LANG_STORAGE_KEY) ?? "ua"
   );
