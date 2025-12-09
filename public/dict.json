@@ -349,28 +349,120 @@
         ]
       }
     ],
+
     "persons": [
-      { "name": "Oleksandr Holoub", "role": "Metteur en scène" },
-      { "name": "Denys Shevtsov", "role": "Admin. technique" },
-      { "name": "Vladyslav Holoub", "role": "Acteur" },
-      { "name": "Tetiana Shevtsova", "role": "Actrice" },
-      { "name": "Karina Shevtsova", "role": "Actrice" },
-      { "name": "Svitlana Volkova", "role": "Actrice" },
-      { "name": "Valeriia Hudovo", "role": "Actrice" },
-      { "name": "Hanna Kaptselovytch", "role": "Actrice" },
-      { "name": "Roman Katrych", "role": "Acteur" },
-      { "name": "Yevhen Kolodii", "role": "Acteur" },
-      { "name": "Olena Kolodiï", "role": "Actrice" },
-      { "name": "Oleh Kostin", "role": "Acteur" },
-      { "name": "Anastasiia Kostina", "role": "Actrice" },
-      { "name": "Mariiam Lototska", "role": "Actrice" },
-      { "name": "Tetiana Machko", "role": "Actrice" },
-      { "name": "Olena Tymtchenko", "role": "Actrice" },
-      { "name": "Viktoriia Tkatchenko", "role": "Actrice" },
-      { "name": "Yuliia Tkatchenko", "role": "Actrice" },
-      { "name": "Andrii Tymoshenko", "role": "Acteur" },
-      { "name": "Artur Romamenko", "role": "Acteur" }
+      {
+        "name": "Holub Oleksandr",
+        "role": "Réalisateur",
+        "imgName": "holub_oleksander.jpg"
+      },
+      {
+        "name": "Shevtsov Denis",
+        "role": "Administrateur technique",
+        "imgName": "shevtsov_denis.jpg"
+      },
+      {
+        "name": "Holub Vladislav",
+        "role": "Acteur",
+        "imgName": "holub_vladislav.jpg"
+      },
+      {
+        "name": "Shevtsova Tetiana",
+        "role": "Actrice",
+        "imgName": "shevtsova_tetiana.jpg"
+      },
+      {
+        "name": "Shevtsova Karina",
+        "role": "Actrice",
+        "imgName": "shevtsova_karina.jpg"
+      },
+      {
+        "name": "Volkova Svetlana",
+        "role": "Actrice",
+        "imgName": "volkova_svetlana.jpg"
+      },
+      {
+        "name": "Goudova Valeria",
+        "role": "Actrice",
+        "imgName": "gudova_valeria.jpg"
+      },
+      {
+        "name": "Kaptselovytch Hanna",
+        "role": "Actrice",
+        "imgName": "kaptselovich_anna.jpg"
+      },
+      {
+        "name": "Katritch Roman",
+        "role": "Acteur",
+        "imgName": "katrich_roman.jpg"
+      },
+      {
+        "name": "Kolodiy Yevhen",
+        "role": "Acteur",
+        "imgName": "kolodiy_evgen.jpg"
+      },
+      {
+        "name": "Kolodiy Olena",
+        "role": "Actrice",
+        "imgName": "kolodiy_lena.jpg"
+      },
+      {
+        "name": "Kostine Oleh",
+        "role": "Acteur",
+        "imgName": "kostin_oleg.jpg"
+      },
+      {
+        "name": "Kostina Anastasiia",
+        "role": "Actrice",
+        "imgName": "kostina_anastasia.jpg"
+      },
+      {
+        "name": "Lototska Mariam",
+        "role": "Actrice",
+        "imgName": "lototska_mariam.jpg"
+      },
+      {
+        "name": "Matchko Tetiana",
+        "role": "Actrice",
+        "imgName": "machko_tetiana.jpg"
+      },
+      {
+        "name": "Tymtchenko Olena",
+        "role": "Actrice",
+        "imgName": "tymchenko_lena.jpg"
+      },
+      {
+        "name": "Tkatcheko Viktoria",
+        "role": "Actrice",
+        "imgName": "tkachenko_viktoria.jpg"
+      },
+      {
+        "name": "Tkatcheko Yulia",
+        "role": "Actrice",
+        "imgName": "tkachenko_yulia.jpg"
+      },
+      {
+        "name": "Timoshenko Andrey",
+        "role": "Acteur",
+        "imgName": "timoshenko_andriy.jpg"
+      },
+      {
+        "name": "Romanenko Arthur",
+        "role": "Acteur",
+        "imgName": "romanenko_artur.jpg"
+      },
+      {
+        "name": "Radionova Oksana",
+        "role": "Actrice",
+        "imgName": "radionova_oksana.jpg"
+      },
+      {
+        "name": "Leonenko Iryna",
+        "role": "Actrice",
+        "imgName": "leonenko_iryna.jpg"
+      }
     ],
+
     "expositions": [
       {
         "id": 1,

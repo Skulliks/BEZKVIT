@@ -1,6 +1,6 @@
 import { Outlet } from "react-router-dom";
 import Toolbar from "../components/toolbar";
-import { Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import { useTitleContext } from "../context/TitleContext";
 
 export default function Layout() {
@@ -8,16 +8,11 @@ export default function Layout() {
 
   return (
     <>
-      <Toolbar />
+      <Box id="toolbar">
+        <Toolbar />
+      </Box>
       {isVisible ? (
-        <Typography
-          sx={{
-            backgroundColor: "red",
-            padding: "10px",
-          }}
-        >
-          {title}
-        </Typography>
+        <Typography className="pageTitle">{title}</Typography>
       ) : null}
       <Outlet />
     </>

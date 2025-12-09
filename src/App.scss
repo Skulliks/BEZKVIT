@@ -1,0 +1,88 @@
+@font-face {
+    font-family: 'BRANCH';
+    src: url("./fonts/BRANCH.ttf");
+}
+@font-face {
+    font-family: 'futura';
+    src: url("./fonts/futura.otf");
+}
+
+$primary: #9F8768;
+
+:root {
+    background-color: black;
+}
+
+#root {
+    display: grid;
+}
+
+body {
+    margin: 0;
+    background: url("./assets/background.jpg") no-repeat;
+    background-size: cover;
+    height: 100dvh;
+}
+
+.MuiDrawer-anchorRight * {
+    padding: 10px;
+}
+
+.btnTwint input {
+    width: 35vh;
+    height: 9vh;
+    background: url("./assets/button_light_fr.svg") no-repeat center center;
+    background-size: cover;
+    cursor: pointer;
+}
+
+$toolbarFontSize: 3.5rem;
+
+#toolbar {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    #toolbar-items {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    
+        * {
+            margin: 0 20px;
+        }
+    
+        #toolbar-title {
+            text-decoration: none;
+            font-family: 'BRANCH';
+            font-size: $toolbarFontSize;
+            color: $primary;
+        }
+        
+        
+        #toolbar-btn-langs {
+            margin-left: auto;
+            font-size: $toolbarFontSize;
+            font-family: 'futura';
+            color: $primary;
+            * {
+                    font-family: 'futura';
+                    font-size: $toolbarFontSize;
+                    color: $primary;
+            }
+        }
+    }
+}
+
+#toolbar::after {
+    content: "";
+    width: 100dvw;
+    position: relative;
+    top: 15px;
+    height: 5px;
+    background-color: white;
+}
+
+.pageTitle {
+    
+}

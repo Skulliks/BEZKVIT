@@ -1,5 +1,5 @@
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import "./App.css";
+import "./App.scss";
 import Layout from "./layouts/index.tsx";
 import { DictProvider } from "./context/DictContext.ts";
 import { TitleProvider } from "./context/TitleContext.ts";
