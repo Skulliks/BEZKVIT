@@ -20,13 +20,13 @@ export const Diary = () => {
   if (!dict) return;
 
   return (
-    <Box className="content">
+    <Box id="contentDiary">
       {dict.events.map((event: EventProps) => {
         return (
-          <Box key={event.title}>
-            {event.month}
-            {event.day}
-            {event.title}
+          <Box key={event.title} className="diary-one-box">
+            <span className="diary-month">{event.month}</span>
+            <span className="diary-day">{event.day}</span>
+            <span className="diary-title">{event.title}</span>
           </Box>
         );
       })}

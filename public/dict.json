@@ -173,6 +173,11 @@
         "name": "Леоненко Ірина",
         "role": "Актор",
         "imgName": "leonenko_iryna.jpg"
+      },
+      {
+        "name": "Ходус Уляна",
+        "role": "Актор",
+        "imgName": "khodus_uliana.jpg"
       }
     ],
 
@@ -466,12 +471,18 @@
         "name": "Leonenko Iryna",
         "role": "Actrice",
         "imgName": "leonenko_iryna.jpg"
+      },
+      {
+        "name": "Khodus Uliana",
+        "role": "Actrice",
+        "imgName": "khodus_uliana.jpg"
       }
     ],
 
     "expositions": [
       {
         "id": 1,
+        "previewName": "new_year_23.jpg",
         "title": "« Les aventures du Grand-père Google et de la Petite-fille Instagram »",
         "date": "30.12.2023",
         "genre": "Genre : programme théâtral divertissant",
@@ -488,6 +499,7 @@
       },
       {
         "id": 2,
+        "previewName": "aventure_disco.jpg",
         "title": "« Nouvelles aventures de Cendrillon au royaume DISCO »",
         "date": "10.03.2024",
         "genre": "Genre : comédie musicale",
@@ -505,6 +517,7 @@
       },
       {
         "id": 3,
+        "previewName": "mousquetaires.jpg",
         "title": "« Aventures de Noël des mousquetaires ou saga d’émigrants »",
         "date": "22.12.2024",
         "genre": "Genre : comédie musicale",
@@ -523,6 +536,7 @@
       },
       {
         "id": 4,
+        "previewName": "2_rabbits.jpg",
         "title": "« À la poursuite de deux lièvres »",
         "date": "23.05.2025",
         "genre": "Genre : comédie musicale",
@@ -541,6 +555,7 @@
       },
       {
         "id": 5,
+        "previewName": "bible_gold.jpg",
         "title": "« À la recherche de l’or biblique »",
         "date": "23.05.2025",
         "genre": "Genre : quête théâtralisée",
@@ -561,6 +576,7 @@
       },
       {
         "id": 6,
+        "previewName": "music_almanach.jpg",
         "title": "Almanach musical « Sur les vagues de l’inspiration »",
         "date": "23.08.2025",
         "genre": "Genre : programme musical et théâtral",

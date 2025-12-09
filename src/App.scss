@@ -262,3 +262,40 @@ $toolbarFontSize: 3.5rem;
     }
   }
 }
+
+#contentDiary {
+  margin-left: auto;
+  width: 50%;
+  margin-top: 200px;
+
+  .diary-one-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .diary-month {
+      color: white;
+      font-family: "GOTHIC";
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+    .diary-day {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $red;
+      font-family: "uni_heavy";
+      font-size: 4rem;
+      background-color: white;
+      border-radius: 50%;
+      height: 7rem;
+      width: 7rem;
+      margin-bottom: 10px;
+    }
+    .diary-title {
+      font-size: 0.9rem;
+      color: white;
+      font-family: "uni_heavy";
+    }
+  }
+}
