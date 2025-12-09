@@ -8,6 +8,7 @@
 }
 
 $primary: #9F8768;
+$red: #960000;
 
 :root {
     background-color: black;
@@ -84,5 +85,5 @@ $toolbarFontSize: 3.5rem;
 }
 
 .pageTitle {
-    
+    background-color: $red;
 }

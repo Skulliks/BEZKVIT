@@ -3,6 +3,7 @@ import { useDictContext } from "../context/DictContext";
 import { useEffect } from "react";
 import type { ExpositionProps } from "../types";
 import { Link } from "react-router-dom";
+import { Box } from "@mui/material";
 
 export const Expositions = () => {
   const { setTitle } = useTitleContext();
@@ -15,7 +16,7 @@ export const Expositions = () => {
   if (!dict) return;
 
   return (
-    <>
+    <Box className="content">
       {dict.expositions.map((exposition: ExpositionProps) => {
         return (
           <Link
@@ -30,7 +31,7 @@ export const Expositions = () => {
           </Link>
         );
       })}
-    </>
+    </Box>
   );
 };
 

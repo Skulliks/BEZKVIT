@@ -20,19 +20,17 @@ export const Diary = () => {
   if (!dict) return;
 
   return (
-    <>
-      <Box>
-        {dict.events.map((event: EventProps) => {
-          return (
-            <Box key={event.title}>
-              {event.month}
-              {event.day}
-              {event.title}
-            </Box>
-          );
-        })}
-      </Box>
-    </>
+    <Box className="content">
+      {dict.events.map((event: EventProps) => {
+        return (
+          <Box key={event.title}>
+            {event.month}
+            {event.day}
+            {event.title}
+          </Box>
+        );
+      })}
+    </Box>
   );
 };
 

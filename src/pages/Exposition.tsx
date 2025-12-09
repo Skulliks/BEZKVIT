@@ -64,7 +64,7 @@ export const Exposition = () => {
   if (currentExposition === undefined) return <NotFound />;
 
   return (
-    <>
+    <Box className="content">
       <Carousel arrows responsive={responsive}>
         {expositionImages.map((src, idx) => {
           return (
@@ -93,6 +93,6 @@ export const Exposition = () => {
           allowFullScreen
         ></iframe>
       )}
-    </>
+    </Box>
   );
 };

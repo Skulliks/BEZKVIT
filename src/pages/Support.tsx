@@ -14,7 +14,7 @@ export const Support = () => {
   if (!dict) return;
 
   return (
-    <>
+    <Box className="content">
       <Typography>{dict.citate_text}</Typography>
       <Typography>{dict.citate_author}</Typography>
       <figure className="btnTwint">
@@ -33,7 +33,7 @@ export const Support = () => {
           return <Box key={item}>{item}</Box>;
         })}
       </Box>
-    </>
+    </Box>
   );
 };
 
