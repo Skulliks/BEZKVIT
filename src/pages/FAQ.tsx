@@ -29,11 +29,11 @@ export const FAQ = () => {
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
-      items: 2,
+      items: 3,
       slidesToSlide: 1,
     },
     mobile: {
-      breakpoint: { max: 464, min: 0 },
+      breakpoint: { max: 600, min: 0 },
       items: 1,
       slidesToSlide: 1,
     },
@@ -48,7 +48,12 @@ export const FAQ = () => {
   return (
     <>
       <div id="about-title">{dict.about_title_content}</div>
-      <Carousel className="about-carousel" responsive={responsive}>
+      <Carousel
+        containerClass="about-box-carousel"
+        itemClass="about-carousel-item"
+        className="about-carousel"
+        responsive={responsive}
+      >
         {dict.persons.map((person: PersonProps) => {
           const imgName = `${person.imgName}`;
           return (
@@ -68,12 +73,10 @@ export const FAQ = () => {
         {dict.about_sections.map((section: AboutSectionProps) => {
           return (
             <Box key={section.title} className="about-box-info">
-              {section.title}
-              {section.description_list.map((pd) => {
+              <span className="about-section-title">{section.title}</span>
+              {section.description_list.map((pd, idx) => {
                 return (
-                  <span
-                    key={section.description_list.findIndex((el) => el === pd)}
-                  >
+                  <span key={`${pd}-${idx}`} className="about-pd">
                     {pd}
                   </span>
                 );

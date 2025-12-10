@@ -36,14 +36,13 @@ body {
   background-color: black;
   background: linear-gradient(
       to bottom,
-      rgba(0, 0, 0, 0.5) 0%,
-      rgba(0, 0, 0, 0.5) 80%,
+      rgba(0, 0, 0, 0.7) 80%,
       rgba(0, 0, 0, 1) 100%
     ),
     url("./assets/background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100dvh;
+  max-height: 100dvh;
 }
 
 .MuiDrawer-anchorRight * {
@@ -158,9 +157,10 @@ $toolbarFontSize: 3.5rem;
 #contentExpositions {
   margin-left: auto;
   margin-top: 40px;
-  width: 50%;
+  max-width: 50%;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  transform: rotate(180deg);
 
   * {
     text-decoration: none;
@@ -217,6 +217,11 @@ $toolbarFontSize: 3.5rem;
   }
 }
 
+#contentExpositions > * {
+  direction: ltr;
+  transform: rotate(180deg);
+}
+
 #contentSuppport {
   display: flex;
   flex-direction: column;
@@ -271,14 +276,17 @@ $toolbarFontSize: 3.5rem;
 }
 
 #contentDiary {
+  display: flex;
   margin-left: auto;
   width: 50%;
-  margin-top: 200px;
+  margin-top: 150px;
+  flex-wrap: wrap;
 
   .diary-one-box {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 20px 40px;
 
     .diary-month {
       color: white;
@@ -311,48 +319,66 @@ $toolbarFontSize: 3.5rem;
   font-family: "uni_heavy";
   font-size: 3.5rem;
   color: white;
-  text-align: end;
-  margin: 200px 150px 100px 0;
+  margin: 200px 0 100px 0;
   cursor: default;
+  width: 30%;
+  margin-left: auto;
+
+  &::after {
+    display: block;
+    content: "";
+    height: 4px;
+    background-color: white;
+    width: 100%;
+    position: relative;
+  }
+}
+
+.about-box-carousel {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  .about-carousel-item {
+    margin: 0px;
+  }
 }
 
 .about-carousel {
-  figure {
-    padding: 10px;
-    padding-top: 10px;
-    width: auto;
-    height: 310px;
-    border-radius: 10px;
-    transition: 0.3s;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    img {
-      width: 200px;
-      height: 250px;
-      object-fit: cover;
-      object-position: center;
+  .about-box-member {
+    figure {
+      width: auto;
+      height: 310px;
       border-radius: 10px;
-      border: 2px white solid;
-      max-width: 200px;
       transition: 0.3s;
-    }
-
-    figcaption {
-      cursor: default;
-      text-align: center;
-      margin-top: 5px;
-      color: white;
-      transition: 0.3s;
-      font-family: "GOTHIC";
-      font-size: 0.8rem;
       display: flex;
       flex-direction: column;
+      align-items: center;
 
-      .strong {
-        font-family: "GOTHICB";
-        display: inline;
+      img {
+        width: 200px;
+        height: 250px;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 10px;
+        border: 2px white solid;
+        transition: 0.3s;
+      }
+
+      figcaption {
+        cursor: default;
+        text-align: center;
+        margin-top: 5px;
+        color: white;
+        transition: 0.3s;
+        font-family: "GOTHIC";
+        font-size: 0.8rem;
+        display: flex;
+        flex-direction: column;
+
+        .strong {
+          font-family: "GOTHICB";
+          display: inline;
+        }
       }
     }
   }
@@ -363,5 +389,255 @@ $toolbarFontSize: 3.5rem;
     color: white;
     display: flex;
     flex-direction: column;
+  }
+}
+
+.about-box-info {
+  width: 55%;
+  margin-left: auto;
+  text-align: justify;
+
+  .about-section-title {
+    font-family: "GOTHIC";
+    text-align: end;
+    padding: 30px;
+    margin-right: 50px;
+    font-size: 2.4rem;
+
+    &::after {
+      display: block;
+      content: "";
+      height: 2px;
+      background-color: white;
+      width: 100%;
+      position: relative;
+      margin-top: 8px;
+    }
+  }
+
+  .about-pd {
+    position: relative;
+    margin-bottom: 10px;
+    font-family: "GOTHIC";
+  }
+}
+
+#contentExposition {
+  width: 100%;
+  color: white;
+  display: flex;
+}
+
+.exposition-text-box {
+  position: absolute;
+  width: 50%;
+  left: 50%;
+  margin-top: 50px;
+
+  .exposition-title {
+    font-family: "uni_heavy";
+    font-size: 3.5rem;
+    color: white;
+    cursor: default;
+    margin-left: auto;
+
+    &::after {
+      display: block;
+      content: "";
+      height: 4px;
+      background-color: white;
+      width: 100%;
+      position: relative;
+    }
+  }
+
+  .exposition-date {
+    font-family: "GOTHICB";
+    margin: 20px 0;
+  }
+
+  .exposition-genre,
+  .exposition-place,
+  .exposition-text,
+  .exposition-title-of-list,
+  li {
+    font-family: "GOTHIC";
+  }
+
+  li {
+    margin: 10px 0;
+  }
+
+  iframe {
+    width: 500px;
+    height: 300px;
+    border-radius: 10px;
+    margin: 30px 0;
+  }
+}
+
+.exposition-carousel-container {
+  width: 40%;
+  margin: 20px;
+
+  figure {
+    border-radius: 10px;
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+      width: auto;
+      height: 510px;
+      object-fit: cover;
+      object-position: center;
+      border-radius: 10px;
+      border: 2px white solid;
+      transition: 0.3s;
+    }
+  }
+}
+
+footer {
+  height: 140px;
+}
+
+@media screen and (max-width: 600px) {
+  :root {
+    font-size: 15px;
+  }
+
+  #sidebar {
+    padding: 80px 0;
+    margin-top: 200px;
+
+    .sidebar-options {
+      font-size: 3.6rem;
+    }
+  }
+
+  #sidebarBtn {
+    img {
+      width: 25px;
+      height: 25px;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  #contentExposition,
+  #contentDiary,
+  #contentSuppport,
+  #contentExpositions {
+    margin: 0;
+  }
+
+  #contentExpositions {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #contentSuppport {
+    width: 100%;
+  }
+
+  #contentDiary {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  #about-title {
+    margin: 0;
+    text-align: center;
+    width: 100dvw;
+  }
+
+  .about-box-info {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .about-section-title {
+    width: 100%;
+  }
+
+  .about-box-member {
+    figure {
+      height: 260px;
+      img {
+        width: 150px;
+        height: 200px;
+      }
+    }
+  }
+
+  #toolbar {
+    width: 100dvw;
+    #toolbar-items {
+      align-items: center;
+      #toolbar-title {
+        align-self: center;
+      }
+
+      #sidebarBtn {
+        align-self: start;
+        margin: 0;
+        padding: 0;
+        top: 80px;
+        right: 10px;
+        background-color: white;
+        padding: 10px;
+        z-index: 1002;
+        position: absolute;
+        border-radius: 50px;
+      }
+      #toolbar-btn-langs {
+        margin: 0;
+        font-size: 1rem;
+        * {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+
+  #contentExposition {
+    flex-direction: column;
+    margin: 0;
+    .exposition-carousel-container,
+    .exposition-text-box {
+      position: inherit;
+    }
+    .exposition-carousel-container {
+      margin: 0;
+      width: 100%;
+
+      img {
+        height: 400px;
+      }
+    }
+
+    .exposition-text-box {
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .exposition-title {
+      width: 100%;
+      text-align: start;
+      margin: 0;
+    }
+  }
+
+  .pageTitle {
+    display: none;
   }
 }

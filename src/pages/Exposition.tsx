@@ -27,8 +27,6 @@ export const Exposition = () => {
       });
   }, [expositionId]);
 
-  console.log(expositionImages);
-
   const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
@@ -41,7 +39,7 @@ export const Exposition = () => {
       slidesToSlide: 1,
     },
     mobile: {
-      breakpoint: { max: 464, min: 0 },
+      breakpoint: { max: 600, min: 0 },
       items: 1,
       slidesToSlide: 1,
     },
@@ -64,35 +62,70 @@ export const Exposition = () => {
   if (currentExposition === undefined) return <NotFound />;
 
   return (
-    <Box className="content">
-      <Carousel arrows responsive={responsive}>
-        {expositionImages.map((src, idx) => {
-          return (
-            <Box key={idx}>
-              <img src={src} alt={`exposition_${idx + 1}`} />
-            </Box>
-          );
-        })}
-      </Carousel>
-
-      <Typography>{currentExposition.title}</Typography>
-      <Typography>{currentExposition.date}</Typography>
-      <Typography>{currentExposition.genre}</Typography>
-      <Typography>{currentExposition.place}</Typography>
-      <Typography>{currentExposition.text}</Typography>
-      <ul>
-        {currentExposition.list.map((el) => {
-          return <li key={el}>{el}</li>;
-        })}
-      </ul>
-      {currentExposition.srcVideo === "" ? null : (
-        <iframe
-          src={currentExposition.srcVideo}
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerPolicy="strict-origin-when-cross-origin"
-          allowFullScreen
-        ></iframe>
-      )}
-    </Box>
+    <>
+      <Box id="contentExposition">
+        <Carousel
+          containerClass="exposition-carousel-container"
+          itemClass="exposition-carousel-items"
+          className="exposition-carousel"
+          arrows
+          responsive={responsive}
+        >
+          {expositionImages.map((src, idx) => {
+            return (
+              <figure>
+                <img
+                  key={`${src}-${idx}`}
+                  src={src}
+                  alt={`exposition_${idx + 1}`}
+                />
+              </figure>
+            );
+          })}
+        </Carousel>
+        <Box className="exposition-text-box">
+          <Typography className="exposition-title">
+            {currentExposition.title}
+          </Typography>
+          <Typography className="exposition-date">
+            {currentExposition.date}
+          </Typography>
+          <Typography className="exposition-genre">
+            {currentExposition.genre}
+          </Typography>
+          <Typography className="exposition-place">
+            {currentExposition.place}
+          </Typography>
+          <Typography className="exposition-text">
+            {currentExposition.text}
+          </Typography>
+          <ul>
+            {currentExposition.list.map((el) => {
+              return <li key={el}>{el}</li>;
+            })}
+          </ul>
+          {currentExposition["title-of-list_2"] && (
+            <>
+              <Typography className="exposition-title-of-list">
+                {currentExposition["title-of-list_2"]}
+              </Typography>
+              <ul>
+                {currentExposition.list_2.map((el, idx) => {
+                  return <li key={`${el}-${idx}`}>{el}</li>;
+                })}
+              </ul>
+            </>
+          )}
+          {currentExposition.srcVideo === "" ? null : (
+            <iframe
+              src={currentExposition.srcVideo}
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+            ></iframe>
+          )}
+        </Box>
+      </Box>
+    </>
   );
 };

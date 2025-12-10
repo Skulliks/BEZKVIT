@@ -9,5 +9,7 @@ export interface ExpositionProps {
   place: string;
   text: string;
   list: [string | null];
+  "title-of-list_2": string;
+  list_2: [string];
   srcVideo: string;
 }
