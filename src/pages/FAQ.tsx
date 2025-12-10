@@ -47,23 +47,27 @@ export const FAQ = () => {
 
   return (
     <>
-      {dict.about_title_content}
-      <Carousel responsive={responsive}>
+      <div id="about-title">{dict.about_title_content}</div>
+      <Carousel className="about-carousel" responsive={responsive}>
         {dict.persons.map((person: PersonProps) => {
           const imgName = `${person.imgName}`;
           return (
-            <Box key={person.name}>
-              <img src={`${imgPath}/${imgName}`} alt={imgName} />
-              {person.name}
-              {person.role}
+            <Box key={person.name} className="about-box-member">
+              <figure>
+                <img src={`${imgPath}/${imgName}`} alt={imgName} />
+                <figcaption>
+                  <span>{person.role}</span>
+                  <span className="strong">{person.name}</span>
+                </figcaption>
+              </figure>
             </Box>
           );
         })}
       </Carousel>
-      <Box>
+      <Box id="about-info">
         {dict.about_sections.map((section: AboutSectionProps) => {
           return (
-            <Box key={section.title}>
+            <Box key={section.title} className="about-box-info">
               {section.title}
               {section.description_list.map((pd) => {
                 return (
