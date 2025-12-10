@@ -5,6 +5,7 @@
     "diary_title": "ЩОДЕННИК",
     "support_title": "ПIДТРИМАТИ",
     "about_title": "ПРО НАС",
+    "twint-btn-text": "Перерахувати через TWINT",
     "events": [
       {
         "month": "ГРУДЕНЬ",
@@ -314,6 +315,7 @@
     "diary_title": "JOURNAL",
     "support_title": "SOUTENIR",
     "about_title": "À PROPOS",
+    "twint-btn-text": "Payer via TWINT",
     "events": [
       {
         "month": "DÉCEMBRE",

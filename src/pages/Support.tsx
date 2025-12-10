@@ -28,6 +28,7 @@ export const Support = () => {
               "_blank"
             )
           }
+          value={dict["twint-btn-text"]}
         ></input>
       </figure>
       <Box className="support-description">

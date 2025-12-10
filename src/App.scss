@@ -250,9 +250,11 @@ $toolbarFontSize: 3.5rem;
     }
 
     input {
-      background: url("./assets/button_light_fr.svg") no-repeat center center;
+      background: white;
+      font-size: 1.6rem;
+      text-wrap: wrap;
       width: 60%;
-      height: 120px;
+      padding: 20px 0;
       border-radius: 10px;
       border: none;
       align-self: center;
