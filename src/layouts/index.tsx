@@ -2,8 +2,10 @@ import { Outlet } from "react-router-dom";
 import Toolbar from "../components/toolbar";
 import { Box, Typography } from "@mui/material";
 import { useTitleContext } from "../context/TitleContext";
+import { useScrollToTop } from "../hooks/useScrollToTop";
 
 export default function Layout() {
+  useScrollToTop();
   const { title, isVisible } = useTitleContext();
 
   return (

@@ -519,15 +519,6 @@ footer {
     }
   }
 
-  #sidebarBtn {
-    img {
-      width: 25px;
-      height: 25px;
-      object-fit: cover;
-      object-position: center;
-    }
-  }
-
   #contentExposition,
   #contentDiary,
   #contentSuppport,
@@ -538,8 +529,32 @@ footer {
   #contentExpositions {
     display: flex;
     flex-direction: column;
-    margin-left: auto;
-    margin-right: auto;
+    align-items: center;
+    max-width: 100%;
+    width: 100%;
+
+    a {
+      width: 100%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      figure {
+        padding: 0;
+        margin: 10px auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 80%;
+
+        figcaption {
+          align-self: center;
+          width: 80%;
+        }
+      }
+    }
   }
 
   #contentSuppport {
@@ -582,6 +597,7 @@ footer {
     width: 100dvw;
     #toolbar-items {
       align-items: center;
+      justify-content: space-between;
       #toolbar-title {
         align-self: center;
       }
@@ -590,13 +606,19 @@ footer {
         align-self: start;
         margin: 0;
         padding: 0;
-        top: 80px;
+        top: 100px;
         right: 10px;
         background-color: white;
         padding: 10px;
         z-index: 1002;
         position: absolute;
         border-radius: 50px;
+        img {
+          width: 25px;
+          height: 25px;
+          object-fit: cover;
+          object-position: center;
+        }
       }
       #toolbar-btn-langs {
         margin: 0;
