@@ -145,10 +145,51 @@ $toolbarFontSize: 3.5rem;
   box-shadow: 8px 8px 40px black;
 }
 
+#next-exposition-box {
+  color: white;
+  font-family: "GOTHICB";
+  width: 50%;
+  margin-left: auto;
+
+  figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+      width: 300px;
+    }
+
+    &::after {
+      content: "";
+      height: 3px;
+      width: 100%;
+      background-color: white;
+      display: block;
+      margin-top: 40px;
+    }
+    &::before {
+      content: "";
+      height: 3px;
+      width: 100%;
+      background-color: white;
+      display: block;
+      margin-bottom: 40px;
+    }
+  }
+}
+
+.title_our_exp {
+  color: white;
+  width: 50%;
+  margin-left: auto;
+  font-family: "GOTHICB";
+}
+
 #contentExpositions {
   margin-left: auto;
   margin-top: 40px;
-  max-width: 50%;
+  width: 50%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 
@@ -159,13 +200,11 @@ $toolbarFontSize: 3.5rem;
   figure {
     padding: 10px;
     padding-top: 10px;
-    width: auto;
+    width: 220px;
     height: 310px;
     border-radius: 10px;
     transition: 0.3s;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin: 0 auto 0 auto;
 
     img {
       width: 200px;
@@ -372,6 +411,7 @@ $toolbarFontSize: 3.5rem;
 }
 
 #about-info {
+  margin-top: 100px;
   .about-box-info {
     color: white;
     display: flex;
@@ -498,7 +538,7 @@ footer {
 
   #sidebar {
     padding: 80px 0;
-    margin-top: 200px;
+    margin-top: 80px;
 
     .sidebar-options {
       font-size: 3.6rem;
@@ -508,8 +548,21 @@ footer {
   #contentExposition,
   #contentDiary,
   #contentSuppport,
-  #contentExpositions {
+  #contentExpositions,
+  #next-exposition-box {
     margin: 0;
+  }
+
+  #next-exposition-box {
+    width: 100%;
+    text-align: center;
+  }
+
+  .title_our_exp {
+    margin: 0;
+    text-align: center;
+    margin-bottom: 10px;
+    width: 100%;
   }
 
   #contentExpositions {
@@ -528,8 +581,9 @@ footer {
 
       figure {
         padding: 0;
-        margin: 10px auto;
+        margin: 0px auto 30px auto;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         text-align: center;

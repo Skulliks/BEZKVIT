@@ -5,6 +5,8 @@
     "diary_title": "ЩОДЕННИК",
     "support_title": "ПIДТРИМАТИ",
     "about_title": "ПРО НАС",
+    "next_exposition_title": "Наступна вистава",
+    "exp_title": "Нашi вистави",
     "twint-btn-text": "Перерахувати через TWINT",
     "events": [
       {
@@ -309,7 +311,7 @@
       },
       {
         "id": 7,
-        "previewName": "",
+        "previewName": "mousquetaires_vacances.jpg",
         "title": "Мушкетери на канiкулах",
         "date": "30.12.2025",
         "genre": "Жанр: мюзикл",
@@ -332,6 +334,8 @@
     "diary_title": "JOURNAL",
     "support_title": "SOUTENIR",
     "about_title": "À PROPOS",
+    "next_exposition_title": "Prochain spectacle",
+    "exp_title": "Nos spectacles",
     "twint-btn-text": "Payer via TWINT",
     "events": [
       {
@@ -636,7 +640,7 @@
       },
       {
         "id": 7,
-        "previewName": "",
+        "previewName": "mousquetaires_vacances.jpg",
         "title": "Les Mousquetaires en vacances",
         "date": "30.12.2025",
         "genre": "Genre : comédie musicale",
