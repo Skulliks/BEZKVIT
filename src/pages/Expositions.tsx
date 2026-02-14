@@ -8,6 +8,7 @@ import { Box } from "@mui/material";
 export const Expositions = () => {
   const { setTitle } = useTitleContext();
   const { dict } = useDictContext();
+  console.log(dict.expositions.reverse());
 
   useEffect(() => {
     if (dict) setTitle(dict.exposition_title);

@@ -34,11 +34,8 @@ body {
   margin: 0;
   padding-top: 150px;
   background-color: black;
-  background: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0.7) 80%,
-      rgba(0, 0, 0, 1) 100%
-    ),
+  background:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 80%, rgba(0, 0, 0, 1) 100%),
     url("./assets/background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -105,24 +102,18 @@ $toolbarFontSize: 3.5rem;
   margin-top: 150px;
   padding: 50px 50px 50px 150px;
   .MuiPaper-root {
-    -webkit-mask-image: radial-gradient(
-        circle 50px at -10px 5px,
-        transparent 49px,
-        white 51px
-      ),
+    -webkit-mask-image:
+      radial-gradient(circle 50px at -10px 5px, transparent 49px, white 51px),
       /* верхний вырез опущен на 15px */
-        radial-gradient(
+      radial-gradient(
           circle 50px at -10px calc(100% - 5px),
           transparent 49px,
           white 51px
         );
     /* нижний вырез поднят на 15px */
     -webkit-mask-composite: source-in;
-    mask-image: radial-gradient(
-        circle 50px at -10px 5px,
-        transparent 49px,
-        white 51px
-      ),
+    mask-image:
+      radial-gradient(circle 50px at -10px 5px, transparent 49px, white 51px),
       radial-gradient(
         circle 50px at -10px calc(100% - 5px),
         transparent 49px,
@@ -160,7 +151,6 @@ $toolbarFontSize: 3.5rem;
   max-width: 50%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  transform: rotate(180deg);
 
   * {
     text-decoration: none;
@@ -215,11 +205,6 @@ $toolbarFontSize: 3.5rem;
       box-shadow: 5px 5px 15px black;
     }
   }
-}
-
-#contentExpositions > * {
-  direction: ltr;
-  transform: rotate(180deg);
 }
 
 #contentSuppport {
@@ -425,6 +410,7 @@ $toolbarFontSize: 3.5rem;
 }
 
 #contentExposition {
+  margin-top: 20px;
   width: 100%;
   color: white;
   display: flex;
@@ -480,7 +466,7 @@ $toolbarFontSize: 3.5rem;
 
 .exposition-carousel-container {
   width: 40%;
-  margin: 20px;
+  margin: 123px 40px 0 40px;
 
   figure {
     border-radius: 10px;
