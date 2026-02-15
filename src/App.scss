@@ -692,6 +692,10 @@ footer {
       flex-direction: column;
       margin-left: auto;
       margin-right: auto;
+
+      iframe {
+        width: 100%;
+      }
     }
 
     .exposition-title {
