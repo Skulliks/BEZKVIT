@@ -5,7 +5,7 @@
     "diary_title": "ЩОДЕННИК",
     "support_title": "ПIДТРИМАТИ",
     "about_title": "ПРО НАС",
-    "next_exposition_title": "Наступна вистава",
+    "next_exposition_title": "",
     "exp_title": "Нашi вистави",
     "twint-btn-text": "Перерахувати через TWINT",
     "events": [
@@ -325,6 +325,20 @@
         "title-of-list_2": "I ось довгоочiкувана музична вистава почалась. Було дуже цiкаво спостерiгати з боки за емоцiями глядачiв, так як багато хто з них був присутнiм на першiй частинi цього спектаклю у минулому роцi. i кожен чекав на появу своїх улюблених персонажiв. Гумор на рiзнi смаки та за  рiзним нацiональним присмаком, нiкого не залишив осторонь. Де якi актори вперше вийшли на театральну сцену.  На при кiнцi всi зробили сумiсну  фотосесiю з акторами та участниками заходу.",
         "list_2": [],
         "srcVideo": "https://www.youtube.com/embed/ZYtLEGeHnMc?si=P7jGGgyGV4JEnGFp"
+      },
+      {
+        "id": 8,
+        "previewName": "2_rabbits_p2.jpg",
+        "title": "За двома зайцями",
+        "date": "08.03.2026",
+        "genre": "Жанр: музична комедія",
+        "place": "Мiсце:  2300 La Chaux-de-Fonds, rue Allemande 24 A (концерт зал католицької церкви)",
+        "auditory": "Аудиторія: (+12)",
+        "text": " Це сучасна музична комедія, за п'єсою українського драматурга Михайла Старицького \"За двома зайцями\". За великим побажанням багатьох глядачів, ми повторили постановку цього мюзикла, доповнивши його новим персонажем, третім товаришем Голохвастого, музикантом \"Маестро\", який так чудово влився в сценарій, що отримав бурних оплесків глядачів. На виставі був повний аншлаг!!!Було присутньо більш 250 осіб дорослих і 15 осіб дітей. Глядачі довго не відпускали акторів після закінчення вистави!!!! Після вистави дітки принесли своїм матусям зроблені власноруч святкові світлини. Після чого усіх чекала, фотосесія разом з акторами і святковий солодкій стіл.",
+        "list": [],
+        "title-of-list_2": "",
+        "list_2": [],
+        "srcVideo": ""
       }
     ]
   },
@@ -334,7 +348,7 @@
     "diary_title": "JOURNAL",
     "support_title": "SOUTENIR",
     "about_title": "À PROPOS",
-    "next_exposition_title": "Prochain spectacle",
+    "next_exposition_title": "",
     "exp_title": "Nos spectacles",
     "twint-btn-text": "Payer via TWINT",
     "events": [
@@ -654,6 +668,20 @@
         "title-of-list_2": "Et voici que la très attendue représentation musicale a commencé. Il était très intéressant d’observer les émotions du public, car beaucoup d’entre eux avaient déjà assisté à la première partie de ce spectacle l’année précédente. Chacun attendait l’apparition de ses personnages préférés. L’humour, adapté à différents goûts et teinté de diverses nuances nationales, n’a laissé personne indifférent. Certains acteurs sont montés sur scène pour la première fois. À la fin, tout le monde a participé à une séance photo collective avec les acteurs et les participants de l’événement.",
         "list_2": [],
         "srcVideo": "https://www.youtube.com/embed/ZYtLEGeHnMc?si=P7jGGgyGV4JEnGFp"
+      },
+      {
+        "id": 8,
+        "previewName": "2_rabbits_p2.jpg",
+        "title": "À la poursuite de deux lièvres",
+        "date": "08.03.2026",
+        "genre": "Genre : comédie musicale",
+        "place": "Lieu : 2300 La Chaux-de-Fonds, rue Allemande 24 A (salle de concert de l'église catholique)",
+        "auditory": "Public : (12+)",
+        "text": "C'est une comédie musicale moderne, adaptée de la pièce du dramaturge ukrainien Mykhaïlo Starytsky \"Chasser deux lièvres à la fois\". Pour répondre au souhait pressant de nombreux spectateurs, nous avons rejoué ce spectacle en y intégrant un nouveau personnage : le musicien \"Maestro\", le troisième compagnon de Golokhvasty. Il s'est si bien intégré au scénario qu'il a été chaleureusement applaudi par le public. La salle affichait complet !!! Plus de 250 adultes et 15 enfants étaient présents. À la fin de la pièce, le public a longuement ovationné les acteurs !!!! Après la représentation, les enfants ont offert à leurs mamans des photos festives qu'ils avaient confectionnées eux-mêmes. Ensuite, tout le monde a pu profiter d'une séance photo avec les acteurs et d'un buffet de douceurs festif.",
+        "list": [],
+        "title-of-list_2": "",
+        "list_2": [],
+        "srcVideo": ""
       }
     ]
   }

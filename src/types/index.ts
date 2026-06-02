@@ -7,6 +7,7 @@ export interface ExpositionProps {
   date: string;
   genre: string;
   place: string;
+  auditory: string;
   text: string;
   list: [string | null];
   "title-of-list_2": string;

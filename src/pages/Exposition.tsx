@@ -56,7 +56,7 @@ export const Exposition = () => {
   if (!dict) return;
 
   const currentExposition: ExpositionProps = dict.expositions.find(
-    (exposition: ExpositionProps) => exposition.id === Number(expositionId)
+    (exposition: ExpositionProps) => exposition.id === Number(expositionId),
   );
 
   if (currentExposition === undefined) return <NotFound />;
@@ -96,6 +96,11 @@ export const Exposition = () => {
           <Typography className="exposition-place">
             {currentExposition.place}
           </Typography>
+          {currentExposition.auditory && (
+            <Typography className="exposition-auditory">
+              {currentExposition.auditory}
+            </Typography>
+          )}
           <Typography className="exposition-text">
             {currentExposition.text}
           </Typography>
