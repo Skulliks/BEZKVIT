@@ -4,12 +4,17 @@ import { useEffect, useState } from "react";
 import type { ExpositionProps } from "../types";
 import { Link } from "react-router-dom";
 import { Box } from "@mui/material";
-import Affiche from "../assets/affiche.jpg";
+import AfficheUA from "../assets/affiche_ua.jpeg";
+import AfficheFR from "../assets/affiche_fr.jpeg";
 
 export const Expositions = () => {
   const { setTitle } = useTitleContext();
   const { dict } = useDictContext();
   const [expositions, setExpositions] = useState<ExpositionProps[]>();
+  const dictAffiches = {
+    fr: AfficheFR,
+    ua: AfficheUA,
+  };
 
   useEffect(() => {
     if (dict) setTitle(dict.exposition_title);
@@ -32,7 +37,10 @@ export const Expositions = () => {
         <Box id="next-exposition-box">
           <h1>{dict.next_exposition_title}</h1>
           <figure>
-            <img src={Affiche} alt="Affiche" />
+            <img
+              src={dictAffiches[dict.lang as keyof typeof dictAffiches]}
+              alt="Affiche"
+            />
           </figure>
         </Box>
       )}

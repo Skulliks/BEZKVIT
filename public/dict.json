@@ -1,11 +1,12 @@
 {
   "ua": {
+    "lang": "ua",
     "main_title": "ГОЛОВНА",
     "exposition_title": "ВИСТАВИ",
     "diary_title": "ЩОДЕННИК",
     "support_title": "ПIДТРИМАТИ",
     "about_title": "ПРО НАС",
-    "next_exposition_title": "",
+    "next_exposition_title": "Гуцульске весiлля",
     "exp_title": "Нашi вистави",
     "twint-btn-text": "Перерахувати через TWINT",
     "events": [
@@ -357,12 +358,13 @@
     ]
   },
   "fr": {
+    "lang": "fr",
     "main_title": "ACCUEIL",
     "exposition_title": "SPECTACLES",
     "diary_title": "JOURNAL",
     "support_title": "SOUTENIR",
     "about_title": "À PROPOS",
-    "next_exposition_title": "",
+    "next_exposition_title": "Mariage houtsoule",
     "exp_title": "Nos spectacles",
     "twint-btn-text": "Payer via TWINT",
     "events": [

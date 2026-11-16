@@ -2,7 +2,8 @@ import { useEffect } from "react";
 import { useDictContext } from "../context/DictContext";
 import { useTitleContext } from "../context/TitleContext";
 import { Box } from "@mui/material";
-import Affiche from "../assets/affiche.jpg";
+import AfficheUA from "../assets/affiche_ua.jpeg";
+import AfficheFR from "../assets/affiche_fr.jpeg";
 
 interface EventProps {
   month: string;
@@ -13,6 +14,10 @@ interface EventProps {
 export const Diary = () => {
   const { setTitle } = useTitleContext();
   const { dict } = useDictContext();
+  const dictAffiches = {
+    fr: AfficheFR,
+    ua: AfficheUA,
+  };
 
   useEffect(() => {
     if (dict) setTitle(dict.diary_title);
@@ -30,7 +35,10 @@ export const Diary = () => {
           id="next-exposition-box"
         >
           <figure>
-            <img src={Affiche} alt="Affiche" />
+            <img
+              src={dictAffiches[dict.lang as keyof typeof dictAffiches]}
+              alt="Affiche"
+            />
           </figure>
         </Box>
       )}
